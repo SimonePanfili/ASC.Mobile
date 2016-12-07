@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<common:MasterDetailPageBase xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:common="clr-namespace:ASC.Mobile.Common"
+            xmlns:views="clr-namespace:ASC.Mobile.Views"
+            x:Class="ASC.Mobile.Views.MasterPage"
+            BindingContext="{Binding Source={StaticResource Locator}, Path=MasterViewModel}"
+            Title="ASC Mobile"
+            Icon="appbar_icon.png">
+
+  <MasterDetailPage.Master>
+    <views:MenuPage x:Name="menuPage" />
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <views:HomePage />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+
+  <!--<TabbedPage.ToolbarItems>
+    <ToolbarItem Order="Primary" Priority="0" Text="La mia tessera" Command="{Binding GotoMyTesseraCommand}">
+      <ToolbarItem.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource" iOS="card.png" Android="card.png" WinPhone="Assets/AppBar/card.png" />
+      </ToolbarItem.Icon>
+    </ToolbarItem>
+  </TabbedPage.ToolbarItems>-->
+
+</common:MasterDetailPageBase>

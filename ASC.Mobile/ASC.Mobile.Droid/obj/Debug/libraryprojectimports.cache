@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\Acr.Support.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\Acr.UserDialogs\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\AndHUD\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\Acr.Support.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\Acr.UserDialogs\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\AndHUD\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\Acr.Support.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\Acr.UserDialogs.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Web\ASC.Mobile\ASC.Mobile\ASC.Mobile.Droid\obj\Debug\__library_projects__\AndHUD.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>
