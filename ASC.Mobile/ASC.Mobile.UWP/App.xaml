@@ -11,5 +11,8 @@
             <uwp:ItemControl HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
         </DataTemplate>
     </Application.Resources>
+    
+    
+    
 
 </Application>
