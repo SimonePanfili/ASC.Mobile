@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:converters="clr-namespace:ASC.Mobile.Converters"
+             x:Class="ASC.Mobile.App">
+
+  <Application.Resources>
+
+    <ResourceDictionary>
+      <vm:ViewModelLocator x:Key="Locator" xmlns:vm="clr-namespace:ASC.Mobile.ViewModels" />
+
+      <converters:ItemTappedConverter x:Key="ItemTappedConverter" />
+      <converters:ImageSourceConverter x:Key="ImageSourceConverter" />
+
+      <converters:ValueWhenConverter x:Key="VisibleWhenItemsConverter">
+        <converters:ValueWhenConverter.When>
+          <sys:Int32>0</sys:Int32>
+        </converters:ValueWhenConverter.When>
+        <converters:ValueWhenConverter.Value>
+          <sys:Boolean>False</sys:Boolean>
+        </converters:ValueWhenConverter.Value>
+        <converters:ValueWhenConverter.Otherwise>
+          <sys:Boolean>True</sys:Boolean>
+        </converters:ValueWhenConverter.Otherwise>
+      </converters:ValueWhenConverter>
+
+      <Color x:Key="defaultColor">White</Color>
+      <Color x:Key="backgroundColor">#1E90FF</Color>
+
+      <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource backgroundColor}"/>
+        <Setter Property="BarTextColor" Value="{DynamicResource defaultColor}"/>
+      </Style>
+
+      <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{DynamicResource backgroundColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource defaultColor}" />
+      </Style>
+
+      <Style TargetType="Label" x:Key="ListLabelStyle">
+        <Setter Property="Margin" Value="0,0,0,-5" />
+      </Style>
+
+      <Style TargetType="Label" BasedOn="{StaticResource ListLabelStyle}" x:Key="TitleListLabelStyle">
+        <Setter Property="Margin" Value="0,0,0,-5" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="16" />
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

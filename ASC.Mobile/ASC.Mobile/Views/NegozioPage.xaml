@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<common:ContentPageBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:ASC.Mobile.Common"
+             xmlns:localBehaviors="clr-namespace:ASC.Mobile.Behaviors"
+             xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
+             x:Class="ASC.Mobile.Views.NegozioPage"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=NegozioViewModel}"
+             Title="Dettaglio Negozio">
+
+  <Grid>
+    <ScrollView Margin="12" Padding="0,0,20,0">
+      <StackLayout>
+
+        <Label Text="{Binding Negozio.Denominazione}" FontAttributes="Bold" />
+
+        <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+          <Image VerticalOptions="Start">
+            <Image.Source>
+              <OnPlatform x:TypeArguments="ImageSource" iOS="pin.png" Android="pin.png" WinPhone="Assets/Views/pin.png" />
+            </Image.Source>
+          </Image>
+          <Label Text="{Binding Negozio.Address.FullAddress}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" Margin="0,20,0,0">
+          <Image>
+            <Image.Source>
+              <OnPlatform x:TypeArguments="ImageSource" iOS="web.png" Android="web.png" WinPhone="Assets/Views/web.png" />
+            </Image.Source>
+          </Image>
+          <Label Text="{Binding Negozio.WebSite}" TextColor="Blue" />
+          <StackLayout.Behaviors>
+            <localBehaviors:TapBehavior>
+              <behaviors:InvokeCommandAction Command="{Binding GotoWebSiteCommand}" CommandParameter="{Binding Negozio.WebSite}" />
+            </localBehaviors:TapBehavior>
+          </StackLayout.Behaviors>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" Margin="0,20,0,0">
+          <Image>
+            <Image.Source>
+              <OnPlatform x:TypeArguments="ImageSource" iOS="phone.png" Android="phone.png" WinPhone="Assets/Views/phone.png" />
+            </Image.Source>
+          </Image>
+          <Label Text="{Binding Negozio.PhoneNumber}" TextColor="Blue" />
+          <StackLayout.Behaviors>
+            <localBehaviors:TapBehavior>
+              <behaviors:InvokeCommandAction Command="{Binding MakeCallCommand}" CommandParameter="{Binding Negozio.PhoneNumber}" />
+            </localBehaviors:TapBehavior>
+          </StackLayout.Behaviors>
+        </StackLayout>
+      </StackLayout>
+    </ScrollView>
+
+    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}">
+      <ActivityIndicator.HorizontalOptions>
+        <OnPlatform x:TypeArguments="LayoutOptions" iOS="CenterAndExpand" Android="CenterAndExpand" WinPhone="FillAndExpand" />
+      </ActivityIndicator.HorizontalOptions>
+      <ActivityIndicator.VerticalOptions>
+        <OnPlatform x:TypeArguments="LayoutOptions" iOS="CenterAndExpand" Android="CenterAndExpand" WinPhone="FillAndExpand" />
+      </ActivityIndicator.VerticalOptions>
+    </ActivityIndicator>
+  </Grid>
+
+</common:ContentPageBase>

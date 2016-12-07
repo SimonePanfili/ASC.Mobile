@@ -1,0 +1,10 @@
+D:\Web\ASC.Mobile\ASC.Mobile.Common\bin\Debug\ASC.Mobile.Common.dll
+D:\Web\ASC.Mobile\ASC.Mobile.Common\bin\Debug\ASC.Mobile.Common.pdb
+D:\Web\ASC.Mobile\ASC.Mobile.Common\bin\Debug\Xamarin.Forms.Core.dll
+D:\Web\ASC.Mobile\ASC.Mobile.Common\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Web\ASC.Mobile\ASC.Mobile.Common\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Web\ASC.Mobile\ASC.Mobile.Common\bin\Debug\Xamarin.Forms.Core.xml
+D:\Web\ASC.Mobile\ASC.Mobile.Common\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Web\ASC.Mobile\ASC.Mobile.Common\obj\Debug\ASC.Mobile.Common.csprojResolveAssemblyReference.cache
+D:\Web\ASC.Mobile\ASC.Mobile.Common\obj\Debug\ASC.Mobile.Common.dll
+D:\Web\ASC.Mobile\ASC.Mobile.Common\obj\Debug\ASC.Mobile.Common.pdb
